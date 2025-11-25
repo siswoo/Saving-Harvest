@@ -1,0 +1,70 @@
+[gd_scene load_steps=6 format=3 uid="uid://jrrrwrlkcg7g"]
+
+[ext_resource type="Texture2D" uid="uid://cywd23i3c47l0" path="res://Images/UI/Slots/CasillaInventario1.png" id="1_vvl1p"]
+[ext_resource type="Texture2D" uid="uid://dkwow3hu5rl7r" path="res://Images/UI/Slots/cuadro_blanco.png" id="2_oox64"]
+[ext_resource type="Script" uid="uid://brhs8h3yggv4c" path="res://Jugador/slotInventario.gd" id="2_uvhpf"]
+[ext_resource type="FontFile" uid="uid://bweym31gsumv7" path="res://Fonts/Arial - Black.ttf" id="4_rdwp2"]
+[ext_resource type="Texture2D" uid="uid://d3asnq17dw0ht" path="res://Iconos/marcoSlot1.png" id="5_vnosb"]
+
+[node name="Slot" type="TextureRect"]
+custom_minimum_size = Vector2(50, 50)
+offset_right = 50.0
+offset_bottom = 50.0
+mouse_default_cursor_shape = 2
+texture = ExtResource("1_vvl1p")
+expand_mode = 2
+script = ExtResource("2_uvhpf")
+
+[node name="fondo" type="TextureRect" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -10.0
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_oox64")
+expand_mode = 2
+
+[node name="imagen" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -10.0
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 2
+
+[node name="cantidadL" type="Label" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 1.0
+offset_bottom = 1.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("4_rdwp2")
+theme_override_font_sizes/font_size = 10
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="marcoSeleccionado" type="TextureRect" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_vnosb")
+expand_mode = 1

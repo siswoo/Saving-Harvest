@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ckvqq6kbac55e"
+path="res://.godot/imported/Bright bgm Happy Farm.mp3-3354bae6952d8ea560506d4862eef0c9.mp3str"
+
+[deps]
+
+source_file="res://Musicas/Bright bgm Happy Farm.mp3"
+dest_files=["res://.godot/imported/Bright bgm Happy Farm.mp3-3354bae6952d8ea560506d4862eef0c9.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

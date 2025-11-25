@@ -1,0 +1,174 @@
+[gd_scene load_steps=16 format=3 uid="uid://dro8hbks8kirh"]
+
+[ext_resource type="Script" path="res://Jugador/Scripts/HUD.gd" id="1_6t4yq"]
+[ext_resource type="Texture2D" uid="uid://8qxwytssdf3j" path="res://Images/UI/Barras/barraSalud2.png" id="2_284k2"]
+[ext_resource type="Texture2D" uid="uid://b3601mj14086e" path="res://Images/UI/Barras/barraSalud1.png" id="3_ttfpb"]
+[ext_resource type="Texture2D" uid="uid://d3dkpchxcjws6" path="res://Images/UI/Barras/barraHambre2.png" id="4_g8hjw"]
+[ext_resource type="Texture2D" uid="uid://b3swykivlsysu" path="res://Images/UI/Barras/barraHambre1.png" id="5_q4cky"]
+[ext_resource type="Texture2D" uid="uid://bsg4aefikajif" path="res://Images/UI/Barras/barraSed2.png" id="6_n8sn8"]
+[ext_resource type="Texture2D" uid="uid://c4x3w3ucsb3bg" path="res://Images/UI/Barras/barraSed1.png" id="7_ex2rf"]
+[ext_resource type="Texture2D" uid="uid://ca7ytk3rkw8vk" path="res://Images/UI/Barras/barraEnergia2.png" id="8_gw3ir"]
+[ext_resource type="Texture2D" uid="uid://dala3xydq56il" path="res://Images/UI/Barras/barraEnergia1.png" id="9_lxqqp"]
+[ext_resource type="Texture2D" uid="uid://cdyqetb3jh7k6" path="res://Iconos/Opciones1.png" id="10_n6rp3"]
+[ext_resource type="Texture2D" uid="uid://by5kdtbpqbo84" path="res://Iconos/mochila1.png" id="11_tue2f"]
+[ext_resource type="PackedScene" uid="uid://dmd2rkwdkanpb" path="res://Escenas/configurables/opciones.tscn" id="11_wkilq"]
+[ext_resource type="Texture2D" uid="uid://yg7ykbma66dp" path="res://Iconos/guardar1.png" id="12_tn7i0"]
+[ext_resource type="PackedScene" uid="uid://6wm25tfmjvti" path="res://Escenas/configurables/guardados.tscn" id="14_3dcnm"]
+[ext_resource type="PackedScene" uid="uid://bjf2mo3fdlvpy" path="res://Jugador/Inventario.tscn" id="15_hk3bn"]
+
+[node name="HUD" type="Node2D" groups=["pausables"]]
+script = ExtResource("1_6t4yq")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="barraSalud" type="TextureProgressBar" parent="CanvasLayer"]
+texture_filter = 1
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 110.0
+offset_bottom = 30.0
+max_value = 1.0
+step = 0.1
+value = 1.0
+nine_patch_stretch = true
+texture_under = ExtResource("2_284k2")
+texture_progress = ExtResource("3_ttfpb")
+
+[node name="barraHambre" type="TextureProgressBar" parent="CanvasLayer"]
+texture_filter = 1
+offset_left = 10.0
+offset_top = 35.0
+offset_right = 110.0
+offset_bottom = 55.0
+max_value = 1.0
+step = 0.1
+value = 1.0
+nine_patch_stretch = true
+texture_under = ExtResource("4_g8hjw")
+texture_progress = ExtResource("5_q4cky")
+
+[node name="barraSed" type="TextureProgressBar" parent="CanvasLayer"]
+texture_filter = 1
+offset_left = 10.0
+offset_top = 60.0
+offset_right = 110.0
+offset_bottom = 80.0
+max_value = 1.0
+step = 0.1
+value = 1.0
+nine_patch_stretch = true
+texture_under = ExtResource("6_n8sn8")
+texture_progress = ExtResource("7_ex2rf")
+
+[node name="barraEnergia" type="TextureProgressBar" parent="CanvasLayer"]
+texture_filter = 1
+offset_left = 10.0
+offset_top = 85.0
+offset_right = 110.0
+offset_bottom = 105.0
+max_value = 1.0
+step = 0.1
+value = 1.0
+nine_patch_stretch = true
+texture_under = ExtResource("8_gw3ir")
+texture_progress = ExtResource("9_lxqqp")
+
+[node name="opcionesB" type="Button" parent="CanvasLayer"]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -62.0
+offset_top = -48.0
+offset_right = -22.0
+offset_bottom = -8.0
+grow_horizontal = 0
+grow_vertical = 0
+focus_mode = 0
+mouse_default_cursor_shape = 2
+flat = true
+
+[node name="icono" type="TextureRect" parent="CanvasLayer/opcionesB"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("10_n6rp3")
+expand_mode = 1
+
+[node name="inventarioB" type="Button" parent="CanvasLayer"]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -122.0
+offset_top = -48.0
+offset_right = -82.0
+offset_bottom = -8.0
+grow_horizontal = 0
+grow_vertical = 0
+focus_mode = 0
+mouse_default_cursor_shape = 2
+flat = true
+
+[node name="icono" type="TextureRect" parent="CanvasLayer/inventarioB"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("11_tue2f")
+expand_mode = 1
+
+[node name="GuardarB" type="Button" parent="CanvasLayer"]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -72.0
+offset_top = -118.0
+offset_right = -12.0
+offset_bottom = -58.0
+grow_horizontal = 0
+grow_vertical = 0
+focus_mode = 0
+mouse_default_cursor_shape = 2
+flat = true
+
+[node name="icono" type="TextureRect" parent="CanvasLayer/GuardarB"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("12_tn7i0")
+expand_mode = 1
+
+[node name="opciones" parent="CanvasLayer" instance=ExtResource("11_wkilq")]
+
+[node name="guardados" parent="CanvasLayer" instance=ExtResource("14_3dcnm")]
+
+[node name="Inventario" parent="CanvasLayer" instance=ExtResource("15_hk3bn")]
+
+[connection signal="pressed" from="CanvasLayer/opcionesB" to="." method="_on_opciones_b_pressed"]
+[connection signal="pressed" from="CanvasLayer/inventarioB" to="." method="_on_inventario_b_pressed"]
+[connection signal="pressed" from="CanvasLayer/GuardarB" to="." method="_on_guardar_b_pressed"]

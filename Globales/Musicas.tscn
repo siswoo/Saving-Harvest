@@ -1,0 +1,32 @@
+[gd_scene load_steps=7 format=3 uid="uid://blq3eqs85sylx"]
+
+[ext_resource type="Script" path="res://Scripts/Musicas.gd" id="1_7eek5"]
+[ext_resource type="AudioStream" uid="uid://ckvqq6kbac55e" path="res://Musicas/Bright bgm Happy Farm.mp3" id="2_bjir4"]
+[ext_resource type="AudioStream" uid="uid://cmrvxxga0kx1m" path="res://Musicas/Comedy Background Game by Infraction.mp3" id="3_o5ba3"]
+[ext_resource type="AudioStream" uid="uid://dxxvu5pd6f8kb" path="res://Musicas/Fun On The Farm.mp3" id="4_ixyhs"]
+[ext_resource type="AudioStream" uid="uid://dap1lwin025a5" path="res://Musicas/Wavecont - Inspiring Uke.mp3" id="5_ku6o5"]
+[ext_resource type="AudioStream" uid="uid://dmuv42j1pk6uf" path="res://Musicas/Sad Piano Ambient Music.mp3" id="6_sty1g"]
+
+[node name="Musicas" type="Node"]
+process_mode = 3
+script = ExtResource("1_7eek5")
+
+[node name="Pista1" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_bjir4")
+bus = &"Music"
+
+[node name="Pista2" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_o5ba3")
+bus = &"Music"
+
+[node name="Pista3" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_ixyhs")
+bus = &"Music"
+
+[node name="Pista4" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_ku6o5")
+bus = &"Music"
+
+[node name="Pista5" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_sty1g")
+bus = &"Music"

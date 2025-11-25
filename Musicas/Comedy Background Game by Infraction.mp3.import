@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cmrvxxga0kx1m"
+path="res://.godot/imported/Comedy Background Game by Infraction.mp3-6bbe9752fd370fa014be7cd30f5b89fe.mp3str"
+
+[deps]
+
+source_file="res://Musicas/Comedy Background Game by Infraction.mp3"
+dest_files=["res://.godot/imported/Comedy Background Game by Infraction.mp3-6bbe9752fd370fa014be7cd30f5b89fe.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

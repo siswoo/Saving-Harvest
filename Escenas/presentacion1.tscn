@@ -1,0 +1,211 @@
+[gd_scene load_steps=9 format=3 uid="uid://qqcufw4nmftg"]
+
+[ext_resource type="Script" path="res://Scripts/presentacion1.gd" id="1_ymoy0"]
+[ext_resource type="Texture2D" uid="uid://2kxnsohq572k" path="res://Iconos/arrowNext1.png" id="2_3q7er"]
+[ext_resource type="Texture2D" uid="uid://dvqax1xg2cbsg" path="res://Images/Fondos/present1.jpg" id="2_ggl7i"]
+[ext_resource type="Texture2D" uid="uid://b80j1b81aenb1" path="res://Images/Fondos/presen2.jpg" id="4_wlmxa"]
+[ext_resource type="Texture2D" uid="uid://c3mmorktw0xi0" path="res://Iconos/arrowPreview1.png" id="5_e4dd3"]
+[ext_resource type="Texture2D" uid="uid://cwfyf5d4gd6x0" path="res://Images/Fondos/present3.jpg" id="5_h3fhg"]
+[ext_resource type="Texture2D" uid="uid://h6i3dyhbl8jg" path="res://Images/UI/Botones/B_Circular1.png" id="7_wk55w"]
+[ext_resource type="Texture2D" uid="uid://cq010to8lfhyl" path="res://Images/UI/Botones/boton8.png" id="8_pufvb"]
+
+[node name="presentacion1" type="Node2D"]
+script = ExtResource("1_ymoy0")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Parte1" type="TextureRect" parent="CanvasLayer"]
+visible = false
+self_modulate = Color(0.396078, 0.396078, 0.396078, 1)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_ggl7i")
+
+[node name="Texto1" type="Label" parent="CanvasLayer/Parte1"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -400.0
+offset_top = -250.0
+offset_right = 400.0
+offset_bottom = 250.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+text = "Hace no mucho, tus padres dirigían una próspera granja en el tranquilo pueblo de Greenhollow. Sus cosechas no solo alimentaban a la comunidad, sino que también mantenían la armonía entre la naturaleza y los aldeanos."
+horizontal_alignment = 3
+vertical_alignment = 3
+autowrap_mode = 3
+
+[node name="siguiente1" type="Button" parent="CanvasLayer/Parte1"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -152.0
+offset_top = -118.0
+offset_right = -72.0
+offset_bottom = -58.0
+grow_horizontal = 0
+grow_vertical = 0
+focus_mode = 0
+mouse_default_cursor_shape = 2
+icon = ExtResource("2_3q7er")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="Parte2" type="TextureRect" parent="CanvasLayer"]
+self_modulate = Color(0.396078, 0.396078, 0.396078, 1)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_wlmxa")
+
+[node name="Texto1" type="Label" parent="CanvasLayer/Parte2"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -400.0
+offset_top = -250.0
+offset_right = 400.0
+offset_bottom = 250.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+text = "Sin embargo, la paz se rompió cuando una misteriosa infección comenzó a propagarse, afectando a los animales pequeños y convirtiéndolos en criaturas tipo zombi. La tragedia golpeó fuerte: tus padres fueron víctimas de esta plaga, dejando un vacío profundo en tu vida."
+horizontal_alignment = 3
+vertical_alignment = 3
+autowrap_mode = 3
+
+[node name="siguiente2" type="Button" parent="CanvasLayer/Parte2"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -152.0
+offset_top = -118.0
+offset_right = -72.0
+offset_bottom = -58.0
+grow_horizontal = 0
+grow_vertical = 0
+focus_mode = 0
+mouse_default_cursor_shape = 2
+icon = ExtResource("2_3q7er")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="anterior2" type="Button" parent="CanvasLayer/Parte2"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 50.0
+offset_top = -118.0
+offset_right = 130.0
+offset_bottom = -58.0
+grow_vertical = 0
+focus_mode = 0
+mouse_default_cursor_shape = 2
+icon = ExtResource("5_e4dd3")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="Parte3" type="TextureRect" parent="CanvasLayer"]
+visible = false
+self_modulate = Color(0.396078, 0.396078, 0.396078, 1)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_h3fhg")
+
+[node name="Texto1" type="Label" parent="CanvasLayer/Parte3"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -400.0
+offset_top = -250.0
+offset_right = 400.0
+offset_bottom = 250.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+text = "Tu misión es clara: restaurar la salud de la granja, proteger a los animales y cultivar cosechas que puedan salvar a tu pueblo. Debes descubrir la verdad detrás de esta infección y encontrar una manera de detenerla antes de que consuma todo lo que queda."
+horizontal_alignment = 3
+vertical_alignment = 3
+autowrap_mode = 3
+
+[node name="siguiente3" type="Button" parent="CanvasLayer/Parte3"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -152.0
+offset_top = -148.0
+offset_right = -32.0
+offset_bottom = -28.0
+grow_horizontal = 0
+grow_vertical = 0
+focus_mode = 0
+mouse_default_cursor_shape = 2
+icon = ExtResource("7_wk55w")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Parte3/siguiente3"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -40.0
+offset_top = -40.0
+offset_right = 40.0
+offset_bottom = 40.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("8_pufvb")
+expand_mode = 1
+
+[node name="anterior3" type="Button" parent="CanvasLayer/Parte3"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 50.0
+offset_top = -118.0
+offset_right = 130.0
+offset_bottom = -58.0
+grow_vertical = 0
+focus_mode = 0
+mouse_default_cursor_shape = 2
+icon = ExtResource("5_e4dd3")
+flat = true
+icon_alignment = 1
+expand_icon = true

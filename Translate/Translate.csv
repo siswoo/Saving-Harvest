@@ -1,0 +1,32 @@
+id,es,en
+presentacion1.gd=iniciarB,Iniciar,Start
+presentacion1.gd=cargarB,Cargar,Load
+presentacion1.gd=opcionesB,Opciones,Options
+presentacion1.gd=salirB,Salir,Quit
+opciones.gd=Marco/Label,Configuración,Setting
+opciones.gd=VBoxContainer/HBoxContainer/BusNameL,Volumen General,General Volume
+opciones.gd=VBoxContainer/HBoxContainer3/BusNameL,Volumen Música,Music Volume
+opciones.gd=VBoxContainer/HBoxContainer2/BusNameL,Volumen SFX,SFX Volume
+opciones.gd=Marco/cancelarB/Label,Cerrar,Close
+opciones.gd=Marco/salirB/Label,Principal,Main
+opciones.gd=Marco/guardarB/Label,Aceptar,Accept
+opciones.gd=VBoxContainer/HBoxContainer4/BusNameL,Idioma,Language
+opciones.gd=AdvertenciaCerrar1/texto,"¿Estás seguro de volver 
+al menú principal?","¿Are you sure to come back ?
+to the main menu?"
+opciones.gd=AdvertenciaCerrar1/siB/Label,Si,Yes
+opciones.gd=AdvertenciaCerrar1/noB/Label,No,No
+guardados.gd=Marco/Label,Partidas Guardadas,Saved Games
+guardados.gd=Marco/cancelarB/Label,Cerrar,Close
+guardados.gd=ContainerMacro/Container1/nombreP,Guardado 1,Saved 1
+guardados.gd=ContainerMacro/Container1/cargar1B/Label,Cargar,Load
+guardados.gd=ContainerMacro/Container1/guardar1B/Label,Guardar,Save
+guardados.gd=ContainerMacro/Container2/nombreP,Guardado 2,Saved 2
+guardados.gd=ContainerMacro/Container2/cargar2B/Label,Cargar,Load
+guardados.gd=ContainerMacro/Container2/guardar2B/Label,Guardar,Save
+guardados.gd=ContainerMacro/Container3/nombreP,Guardado 3,Saved 3
+guardados.gd=ContainerMacro/Container3/cargar3B/Label,Cargar,Load
+guardados.gd=ContainerMacro/Container3/guardar3B/Label,Guardar,Save
+opciones.gd=CanvasLayer/Parte1/Texto1,"Hace no mucho, tus padres dirigían una próspera granja en el tranquilo pueblo de Greenhollow. Sus cosechas no solo alimentaban a la comunidad, sino que también mantenían la armonía entre la naturaleza y los aldeanos.","Not long ago, your parents ran a prosperous farm in the sleepy town of Greenhollow. Their crops not only fed the community, but also maintained harmony between nature and the villagers."
+opciones.gd=CanvasLayer/Parte2/Texto1,"Sin embargo, la paz se rompió cuando una misteriosa infección comenzó a propagarse, afectando a los animales pequeños y convirtiéndolos en criaturas tipo zombi. La tragedia golpeó fuerte: tus padres fueron víctimas de esta plaga, dejando un vacío profundo en tu vida.","However, the peace was broken when a mysterious infection began to spread, affecting the small animals and turning them into zombie-like creatures. Tragedy hit hard: your parents were victims of this plague, leaving a deep void in your life."
+opciones.gd=CanvasLayer/Parte3/Texto1,"Tu misión es clara: restaurar la salud de la granja, proteger a los animales y cultivar cosechas que puedan salvar a tu pueblo. Debes descubrir la verdad detrás de esta infección y encontrar una manera de detenerla antes de que consuma todo lo que queda.","Your mission is clear: restore the health of the farm, protect the animals and grow crops that can save your people. You must discover the truth behind this infection and find a way to stop it before it consumes everything that is left."

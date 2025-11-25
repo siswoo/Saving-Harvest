@@ -1,0 +1,49 @@
+[gd_scene load_steps=8 format=3 uid="uid://dmtdv7236ykmv"]
+
+[ext_resource type="Script" path="res://Escenas/Interactivos.gd" id="1_ch261"]
+[ext_resource type="Texture2D" uid="uid://bx2fpecb6qyqh" path="res://Assets/naturaleza/arboles/arbol2-Sheet.png" id="2_pwtna"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ed0p5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tmk8m"]
+atlas = ExtResource("2_pwtna")
+region = Rect2(0, 0, 98, 125)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hwjl4"]
+atlas = ExtResource("2_pwtna")
+region = Rect2(98, 0, 98, 125)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5ti07"]
+atlas = ExtResource("2_pwtna")
+region = Rect2(196, 0, 98, 125)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ducpp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tmk8m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hwjl4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5ti07")
+}],
+"loop": true,
+"name": &"default",
+"speed": 1.0
+}]
+
+[node name="Interactivos" type="StaticBody2D"]
+script = ExtResource("1_ch261")
+
+[node name="Modelo" type="Sprite2D" parent="."]
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_ed0p5")
+
+[node name="arbol2-sheet" type="AnimatedSprite2D" parent="."]
+visible = false
+sprite_frames = SubResource("SpriteFrames_ducpp")
+autoplay = "default"
+frame_progress = 0.458227

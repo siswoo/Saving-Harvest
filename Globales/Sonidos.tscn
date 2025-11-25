@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://c6ajcl2sm230a"]
+
+[ext_resource type="Script" path="res://Globales/Sonidos.gd" id="1_nmbau"]
+
+[node name="Sonidos" type="Node"]
+process_mode = 3
+script = ExtResource("1_nmbau")
+
+[node name="AudioBotones1" type="AudioStreamPlayer2D" parent="."]
+bus = &"SFX"

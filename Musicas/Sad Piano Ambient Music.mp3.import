@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dmuv42j1pk6uf"
+path="res://.godot/imported/Sad Piano Ambient Music.mp3-e46c5f28dc23cb9d84ecc2d1757b19d5.mp3str"
+
+[deps]
+
+source_file="res://Musicas/Sad Piano Ambient Music.mp3"
+dest_files=["res://.godot/imported/Sad Piano Ambient Music.mp3-e46c5f28dc23cb9d84ecc2d1757b19d5.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

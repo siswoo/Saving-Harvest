@@ -1,0 +1,227 @@
+[gd_scene load_steps=10 format=3 uid="uid://bjf2mo3fdlvpy"]
+
+[ext_resource type="Script" uid="uid://cfb8c8086eykk" path="res://Jugador/Scripts/Inventario.gd" id="1_d4ljy"]
+[ext_resource type="Texture2D" uid="uid://bxss86qdgqsd4" path="res://Images/UI/Paneles/panelInventario1.png" id="2_g840g"]
+[ext_resource type="Texture2D" uid="uid://dsn2x4am81nsn" path="res://Iconos/moneda1.png" id="3_nlmq5"]
+
+[sub_resource type="Gradient" id="Gradient_a3xho"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 0, 0, 0.372549)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_f4k2j"]
+gradient = SubResource("Gradient_a3xho")
+
+[sub_resource type="Gradient" id="Gradient_jcmlx"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_nmpv4"]
+gradient = SubResource("Gradient_jcmlx")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3c28t"]
+content_margin_left = 5.0
+content_margin_top = 5.0
+content_margin_right = 5.0
+content_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_d4m4t"]
+content_margin_left = 10.0
+
+[node name="Inventario" type="CanvasLayer"]
+script = ExtResource("1_d4ljy")
+
+[node name="Fondo" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture1D_f4k2j")
+
+[node name="Panel" type="TextureRect" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -400.0
+offset_top = -240.0
+offset_right = 400.0
+offset_bottom = 240.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_g840g")
+expand_mode = 1
+
+[node name="titulo" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -100.0
+offset_right = 100.0
+offset_bottom = 40.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 20
+text = "INVENTARIO"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="buttonCerrar" type="Button" parent="Panel"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_top = 5.0
+offset_right = -10.0
+offset_bottom = 36.0
+grow_horizontal = 0
+mouse_default_cursor_shape = 2
+theme_override_font_sizes/font_size = 25
+text = "X"
+flat = true
+
+[node name="Macro1" type="GridContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 39.0
+offset_top = -184.0
+offset_right = 359.0
+offset_bottom = 116.0
+grow_vertical = 2
+columns = 6
+
+[node name="Popup" type="Panel" parent="Panel"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = -140.0
+offset_right = 370.0
+offset_bottom = -10.0
+grow_vertical = 0
+
+[node name="nombre_fondo" type="TextureRect" parent="Panel/Popup"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 30.0
+grow_horizontal = 2
+texture = SubResource("GradientTexture1D_nmpv4")
+
+[node name="nombre_texto" type="Label" parent="Panel/Popup"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 30.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxEmpty_3c28t")
+text = "asdasdasd"
+vertical_alignment = 1
+autowrap_mode = 1
+
+[node name="descripcion_fondo" type="TextureRect" parent="Panel/Popup"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -30.0
+offset_right = 260.0
+grow_vertical = 2
+texture = SubResource("GradientTexture1D_nmpv4")
+
+[node name="descripcion_texto" type="Label" parent="Panel/Popup"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -30.0
+offset_right = 260.0
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = SubResource("StyleBoxEmpty_3c28t")
+text = "hola!"
+autowrap_mode = 1
+
+[node name="estatus_fondo" type="TextureRect" parent="Panel/Popup"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = 5.0
+offset_right = 340.0
+offset_bottom = 55.0
+grow_vertical = 2
+texture = SubResource("GradientTexture1D_nmpv4")
+
+[node name="estatus_texto" type="RichTextLabel" parent="Panel/Popup"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = 5.0
+offset_right = 340.0
+offset_bottom = 55.0
+grow_vertical = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 10
+theme_override_font_sizes/bold_font_size = 11
+theme_override_styles/normal = SubResource("StyleBoxEmpty_3c28t")
+bbcode_enabled = true
+text = "[color=black]hola![/color]"
+autowrap_mode = 1
+
+[node name="oro_texto" type="Label" parent="Panel/Popup"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -90.0
+offset_top = -95.0
+offset_right = -30.0
+offset_bottom = -65.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxEmpty_d4m4t")
+text = "100"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 1
+
+[node name="oro_img" type="TextureRect" parent="Panel/Popup"]
+layout_mode = 0
+offset_left = 310.0
+offset_top = 40.0
+offset_right = 330.0
+offset_bottom = 60.0
+texture = ExtResource("3_nlmq5")
+expand_mode = 1
+
+[node name="zonaTest" type="Node" parent="."]
+
+[node name="unoMas" type="Button" parent="zonaTest"]
+offset_left = 42.0
+offset_top = 100.0
+offset_right = 102.0
+offset_bottom = 131.0
+text = "1+ Slot"
+
+[node name="unoMenos" type="Button" parent="zonaTest"]
+offset_left = 42.0
+offset_top = 140.0
+offset_right = 102.0
+offset_bottom = 171.0
+text = "1- Slot"
+
+[connection signal="button_up" from="Panel/buttonCerrar" to="." method="_on_button_cerrar_button_up"]
+[connection signal="pressed" from="zonaTest/unoMas" to="." method="_on_uno_mas_pressed"]
+[connection signal="pressed" from="zonaTest/unoMenos" to="." method="_on_uno_menos_pressed"]

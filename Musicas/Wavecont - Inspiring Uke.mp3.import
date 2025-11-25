@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dap1lwin025a5"
+path="res://.godot/imported/Wavecont - Inspiring Uke.mp3-628aea8939b5aba4f5cac7ba644a8491.mp3str"
+
+[deps]
+
+source_file="res://Musicas/Wavecont - Inspiring Uke.mp3"
+dest_files=["res://.godot/imported/Wavecont - Inspiring Uke.mp3-628aea8939b5aba4f5cac7ba644a8491.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

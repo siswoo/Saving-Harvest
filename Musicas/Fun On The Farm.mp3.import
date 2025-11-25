@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dxxvu5pd6f8kb"
+path="res://.godot/imported/Fun On The Farm.mp3-c3fe021460b0cbfbc4940fb5784b4c3e.mp3str"
+
+[deps]
+
+source_file="res://Musicas/Fun On The Farm.mp3"
+dest_files=["res://.godot/imported/Fun On The Farm.mp3-c3fe021460b0cbfbc4940fb5784b4c3e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

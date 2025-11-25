@@ -1,0 +1,367 @@
+[gd_scene load_steps=11 format=3 uid="uid://dmd2rkwdkanpb"]
+
+[ext_resource type="Script" path="res://Escenas/configurables/opciones.gd" id="1_m5ppq"]
+[ext_resource type="Texture2D" uid="uid://cf5t12lta5hs0" path="res://Images/UI/Marcos/Marco1.png" id="1_p8yaj"]
+[ext_resource type="Texture2D" uid="uid://gm4upsbb2tdr" path="res://Images/UI/Botones/boton2.png" id="2_dikxj"]
+[ext_resource type="Texture2D" uid="uid://cxokwndpdtm0w" path="res://Images/UI/Botones/boton1.png" id="3_4t4dt"]
+[ext_resource type="FontFile" uid="uid://b55sbc8v70vk" path="res://Fonts/Chaparral Pro - Bold.otf" id="3_jc6l3"]
+[ext_resource type="FontFile" uid="uid://7s68mijwhd81" path="res://Fonts/Arial - Regular.ttf" id="5_mgaor"]
+[ext_resource type="Texture2D" uid="uid://bxnoykb6f7ecs" path="res://Images/UI/Botones/boton4.png" id="6_1wkqe"]
+[ext_resource type="Texture2D" uid="uid://yrdwas1gi1vn" path="res://Images/UI/Marcos/Marco2.png" id="8_nwicq"]
+
+[sub_resource type="Gradient" id="Gradient_a3xho"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 0, 0, 0.372549)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_xm5dx"]
+gradient = SubResource("Gradient_a3xho")
+
+[node name="opciones" type="CanvasLayer"]
+script = ExtResource("1_m5ppq")
+
+[node name="Fondo" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture1D_xm5dx")
+
+[node name="Marco" type="TextureRect" parent="."]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -400.0
+offset_top = -300.0
+offset_right = 400.0
+offset_bottom = 300.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_p8yaj")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Marco"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -99.5
+offset_top = 30.0
+offset_right = 99.5
+offset_bottom = 88.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("3_jc6l3")
+theme_override_font_sizes/font_size = 40
+text = "CONFIGURACIÓN"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="cancelarB" type="Button" parent="Marco"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -650.0
+offset_top = -140.0
+offset_right = -530.0
+offset_bottom = -60.0
+grow_horizontal = 0
+grow_vertical = 0
+focus_mode = 0
+mouse_default_cursor_shape = 2
+flat = true
+
+[node name="TextureRect" type="TextureRect" parent="Marco/cancelarB"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_dikxj")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Marco/cancelarB"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 25
+text = "Cerrar"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="guardarB" type="Button" parent="Marco"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -290.0
+offset_top = -140.0
+offset_right = -140.0
+offset_bottom = -60.0
+grow_horizontal = 0
+grow_vertical = 0
+focus_mode = 0
+mouse_default_cursor_shape = 2
+flat = true
+
+[node name="TextureRect" type="TextureRect" parent="Marco/guardarB"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_4t4dt")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Marco/guardarB"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 25
+text = "Aceptar"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="salirB" type="Button" parent="Marco"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -85.0
+offset_top = -140.0
+offset_right = 65.0
+offset_bottom = -60.0
+grow_horizontal = 2
+grow_vertical = 0
+focus_mode = 0
+mouse_default_cursor_shape = 2
+flat = true
+
+[node name="TextureRect" type="TextureRect" parent="Marco/salirB"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_1wkqe")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Marco/salirB"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 18
+text = "Principal"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -300.0
+offset_top = -100.0
+offset_right = 300.0
+offset_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 100
+alignment = 1
+
+[node name="BusNameL" type="Label" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_fonts/font = ExtResource("5_mgaor")
+theme_override_font_sizes/font_size = 25
+text = "Volumen General"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="GeneralSlider" type="HSlider" parent="VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(200, 30)
+layout_mode = 2
+max_value = 1.0
+step = 0.001
+value = 0.5
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 100
+alignment = 1
+
+[node name="BusNameL" type="Label" parent="VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_fonts/font = ExtResource("5_mgaor")
+theme_override_font_sizes/font_size = 25
+text = "Volumen Música"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VolumenSlider" type="HSlider" parent="VBoxContainer/HBoxContainer3"]
+custom_minimum_size = Vector2(200, 30)
+layout_mode = 2
+max_value = 1.0
+step = 0.001
+value = 0.5
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 100
+alignment = 1
+
+[node name="BusNameL" type="Label" parent="VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_fonts/font = ExtResource("5_mgaor")
+theme_override_font_sizes/font_size = 25
+text = "Volumen SFX     "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SFXSlider" type="HSlider" parent="VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(200, 30)
+layout_mode = 2
+max_value = 1.0
+step = 0.001
+value = 0.5
+
+[node name="AdvertenciaCerrar1" type="TextureRect" parent="."]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -300.0
+offset_top = -200.0
+offset_right = 300.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("8_nwicq")
+expand_mode = 1
+
+[node name="texto" type="Label" parent="AdvertenciaCerrar1"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -250.0
+offset_top = 70.0
+offset_right = 250.0
+offset_bottom = 170.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 30
+text = "¿Estás seguro de volver 
+al menú principal?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="siB" type="Button" parent="AdvertenciaCerrar1"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 50.0
+offset_top = -190.0
+offset_right = 150.0
+offset_bottom = -110.0
+grow_horizontal = 2
+grow_vertical = 0
+focus_mode = 0
+mouse_default_cursor_shape = 2
+flat = true
+
+[node name="TextureRect" type="TextureRect" parent="AdvertenciaCerrar1/siB"]
+layout_mode = 0
+offset_right = 100.0
+offset_bottom = 80.0
+texture = ExtResource("3_4t4dt")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="AdvertenciaCerrar1/siB"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 20
+text = "SI"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="noB" type="Button" parent="AdvertenciaCerrar1"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -150.0
+offset_top = -190.0
+offset_right = -50.0
+offset_bottom = -110.0
+grow_horizontal = 2
+grow_vertical = 0
+focus_mode = 0
+mouse_default_cursor_shape = 2
+flat = true
+
+[node name="TextureRect" type="TextureRect" parent="AdvertenciaCerrar1/noB"]
+layout_mode = 0
+offset_right = 100.0
+offset_bottom = 80.0
+texture = ExtResource("2_dikxj")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="AdvertenciaCerrar1/noB"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 20
+text = "NO"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="mouse_entered" from="Marco/cancelarB" to="." method="_on_cancelar_b_mouse_entered"]
+[connection signal="mouse_entered" from="Marco/guardarB" to="." method="_on_guardar_b_mouse_entered"]
+[connection signal="pressed" from="Marco/guardarB" to="." method="_on_guardar_b_pressed"]
+[connection signal="mouse_entered" from="Marco/salirB" to="." method="_on_guardar_b_mouse_entered"]
+[connection signal="pressed" from="Marco/salirB" to="." method="_on_salir_b_pressed"]
