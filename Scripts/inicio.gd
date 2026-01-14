@@ -2,7 +2,7 @@ extends CanvasLayer
 @onready var audio_botones: AudioStreamPlayer2D = $AudioBotones
 @onready var opciones: CanvasLayer = $opciones
 @onready var guardados: CanvasLayer = $guardados
-var presentacion1 = preload("res://Escenas/presentacion1.tscn")
+var presentacion1 = preload("res://scenes/presentacion1.tscn")
 
 func _ready() -> void:
 	lenguajes()

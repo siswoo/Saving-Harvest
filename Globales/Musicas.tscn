@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://blq3eqs85sylx"]
 
-[ext_resource type="Script" path="res://Scripts/Musicas.gd" id="1_7eek5"]
+[ext_resource type="Script" uid="uid://bxjrg1l35texd" path="res://scripts/Musicas.gd" id="1_7eek5"]
 [ext_resource type="AudioStream" uid="uid://ckvqq6kbac55e" path="res://Musicas/Bright bgm Happy Farm.mp3" id="2_bjir4"]
 [ext_resource type="AudioStream" uid="uid://cmrvxxga0kx1m" path="res://Musicas/Comedy Background Game by Infraction.mp3" id="3_o5ba3"]
 [ext_resource type="AudioStream" uid="uid://dxxvu5pd6f8kb" path="res://Musicas/Fun On The Farm.mp3" id="4_ixyhs"]

@@ -46,7 +46,7 @@ func _get_drag_data(_at_position: Vector2):
 		if imagenO != null:
 			imagenO.texture = imagen
 		else:
-			imagenO.texture = load("res://Iconos/interrogacion1.png")
+			imagenO.texture = load("res://assets/textures/interrogacion1.png")
 		drag_texture.texture = imagen
 		drag_texture.size = Vector2(50,50)
 		set_drag_preview(drag_texture)
@@ -77,7 +77,7 @@ func setearInfo(item,cantidadR,durabilidadR,itemId) -> void:
 	nombre = item["nombre_"+lenguajeActual]
 	descripcion = item["descripcion_"+lenguajeActual]
 	if item["imagen"] != null:
-		rutaImagen = "res://Iconos/"+item["imagen"]
+		rutaImagen = "res://assets/textures/"+item["imagen"]
 		imagen = load(rutaImagen)
 	cantidad = cantidadR
 	cantidadMaxima = item["cantidadMaxima"]
@@ -117,7 +117,7 @@ func dibujarElementos() -> void:
 	if imagen != null:
 		imagenO.texture = imagen
 	else:
-		imagenO.texture = load("res://Iconos/interrogacion1.png")
+		imagenO.texture = load("res://assets/textures/interrogacion1.png")
 	cantidad_l.text = str(cantidad)
 
 func infoEntrante(info) -> void:

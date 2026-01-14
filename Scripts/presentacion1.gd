@@ -2,7 +2,7 @@ extends Node2D
 @onready var parte_1: TextureRect = $CanvasLayer/Parte1
 @onready var parte_2: TextureRect = $CanvasLayer/Parte2
 @onready var parte_3: TextureRect = $CanvasLayer/Parte3
-var mundo1 = preload("res://Escenas/mundo1.tscn")
+var mundo1 = preload("res://scenes/mundo1.tscn")
 
 func _ready() -> void:
 	parte_1.visible = true

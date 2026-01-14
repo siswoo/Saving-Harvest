@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://b2kg2wtnnc51g"]
 
-[ext_resource type="Script" path="res://Assets/naturaleza/arboles/arbol1.gd" id="1_35ad5"]
-[ext_resource type="Texture2D" uid="uid://ddiwh6ioqa2mo" path="res://Assets/naturaleza/arboles/arbol1.png" id="2_pcnxh"]
+[ext_resource type="Script" uid="uid://j8lfwn263768" path="res://assets/naturaleza/arboles/arbol1.gd" id="1_35ad5"]
+[ext_resource type="Texture2D" uid="uid://ddiwh6ioqa2mo" path="res://assets/textures/arbol1.png" id="2_pcnxh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rmv7u"]
 size = Vector2(40, 20)
